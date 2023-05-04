@@ -1,0 +1,34 @@
+.header__title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #232134;
+  margin-left: 12px;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  padding: 24px 0 24px 0;
+}
+
+.header__items {
+  display: flex;
+  width: 275px;
+  margin-left: 280px;
+  justify-content: space-between;
+  color: #232134;
+}
+
+.header__items .active {
+  font-weight: 500;
+  color: var(--active-link);
+}
+
+.vacancy-page > .search__item   {
+  font-weight: 500;
+  color: var(--active-link);
+}

@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+  max-width: 1116px;
+  margin: 0 auto;
+}
+
+.content__body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
