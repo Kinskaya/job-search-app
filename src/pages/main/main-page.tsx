@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import searchIcon from "../../assets/images/search-icon.png";
 import "./index.css";
+import { SearchBar } from "../../components/search-bar/search-bar";
+import { Item } from "../../components/item/item";
+import { data } from "../../data";
 
 const MainPage = () => {
   return (
@@ -13,31 +14,23 @@ const MainPage = () => {
           </div>
         </aside>
         <div className="content">
+          <div className="content__item search">
+            <SearchBar />
+          </div>
           <div className="content__row">
-            <div className="content__item search">
-              <div className="search-bar">
-                <img src={searchIcon} className="search-bar__icon" alt="search-icon" />
-                <input type="text" placeholder="Введите название вакансии"/>
-                <button type="button" className="search-bar__btn btn">
-                  Поиск
-                </button>
-              </div>
-            </div>
-            <div className="content__item">
-              <Link to='/vacancy'>
-                Вакансия 1
-              </Link>
-            </div>
-            <div className="content__item">
-              <Link to='/vacancy'>
-                Вакансия 2
-              </Link>
-            </div>
-            <div className="content__item">
-              <Link to='/empty'>
-                Нет вакансий и избранных
-              </Link>
-            </div>
+            {data.map((item) => (
+              <Item
+                key={item.id}
+                id={item.id}
+                title={item.title}
+                paymentFrom={item.paymentFrom}
+                paymentTo={item.paymentTo}
+                currency={item.currency}
+                schedule={item.schedule}
+                location={item.location}
+                selected={item.selected}
+              />
+            ))}
           </div>
         </div>
       </div>

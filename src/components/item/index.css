@@ -1,0 +1,68 @@
+.item__row {
+  display: flex;
+  padding: 24px;
+}
+
+.separator {
+  background: #7B7C88;
+  clip-path: circle(50%);
+  width: 5px;
+  height: 5px;
+  margin: 0 12px 0 12px;
+}
+
+.item__info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.item__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #5E96FC;
+  margin-bottom: 12px;
+}
+
+.item__payment {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #232134;
+}
+
+.item__city {
+  display: flex;
+  line-height: 19px;
+  align-items: center;
+  height: 20px;
+}
+
+.item__city img {
+  margin-right: 8px;
+}
+
+.item__conditions {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+  height: 21px;
+}
+
+.select__btn {
+  width: 22px;
+  height: 22px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent url("../../assets/images/star-icon.svg") no-repeat;
+}
+
+.select__btn.active {
+  background: transparent url("../../assets/images/star2-icon.svg") no-repeat;
+}
+
+.payment-currency {
+  margin-left: 2px;
+}
