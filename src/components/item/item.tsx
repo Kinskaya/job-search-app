@@ -13,6 +13,7 @@ export interface IItem {
   schedule: string,
   location: string,
   selected: boolean,
+  currentItems?: number
 }
 
 export const Item = (item: IItem) => {

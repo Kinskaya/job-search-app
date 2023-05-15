@@ -24,6 +24,10 @@
   height: 137px;
 }
 
+.content__item.search {
+  height: 48px;
+}
+
 .sidebar {
   max-width: 315px;
   width: 100%;

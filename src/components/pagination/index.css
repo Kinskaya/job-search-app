@@ -1,0 +1,52 @@
+ul[role=navigation] {
+  display: flex;
+  width: 192px;
+  justify-content: space-between;
+  margin: 40px auto 0 auto;
+}
+
+.previous a,
+.next a {
+  background: url("../../assets/images/vector.svg") no-repeat center;
+  height: 16px;
+  width: 16px;
+  filter: contrast(20%);
+}
+
+li.previous,
+li.next {
+  align-items: center;
+}
+
+li.disabled a {
+  filter: contrast(100%);
+}
+
+.next a {
+  transform: scaleX(-1);
+}
+
+ul[role=navigation] li {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #EAEBED;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul[role=navigation] li.selected {
+  background: #5E96FC;
+  color: #FFFFFF;
+}
+
+a[role=button] {
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+}
+
+
