@@ -1,0 +1,171 @@
+.filter__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.filter {
+  max-width: 315px;
+  width: 100%;
+  height: max-content;
+  background: #FFFFFF;
+  border: 1px solid #EAEBED;
+  border-radius: 12px;
+}
+
+.filter__row {
+  display: flex;
+  flex-direction: column;
+  padding: 19px;
+}
+
+.reset__label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ACADB9;
+}
+
+.reset__label:hover {
+  color: #92C1FF;
+}
+
+.reset__label.active {
+  color: #5E96FC;
+}
+
+.reset__label:hover > button:before,
+.reset__label:hover > button:after {
+  border: 1px solid #92C1FF;
+}
+
+.reset__label.active > button:before,
+.reset__label.active > button:after {
+  border: 1px solid #92C1FF;
+}
+
+.reset__btn {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.reset__btn:before,
+.reset__btn:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  border: 1px solid #ACADB9;
+}
+
+.reset__btn:before {
+  transform: rotate(135deg);
+}
+
+.reset__btn:after {
+  transform: rotate(-135deg);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.filter__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.filter__content label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+
+.salary input {
+  width: 100%;
+  outline: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.filter__content select,
+.filter__content input {
+  padding: 11px 0 11px 12px;
+  height: 42px;
+  border: 1px solid #D5D6DC;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ACADB9;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ACADB9;
+}
+
+.chevron {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+
+.chevron::before {
+  border-style: solid;
+  border-width: 0.03rem 0.03rem 0 0;
+  content: '';
+  display: inline-block;
+  height: 6px;
+  left: 254px;
+  position: relative;
+  bottom: 0.53rem;
+  margin-top: 22px;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 6px;
+  color: #ACADB9;
+}
+
+.chevron.chevron_bottom:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.filter__content.field > span {
+  margin-top: 20px;
+}
+
+.filter__content.field > span::before {
+  width: 9px;
+  height: 9px;
+  left: 246px;
+}
+
+.salary {
+  display: flex;
+}
+
+.salary-from {
+  margin-bottom: 8px;
+}
+
+.filter__btn {
+  height: 40px;
+}

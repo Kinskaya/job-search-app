@@ -40,12 +40,12 @@
 }
 
 .item__city img {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .item__conditions {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   align-items: center;
   height: 21px;
 }
