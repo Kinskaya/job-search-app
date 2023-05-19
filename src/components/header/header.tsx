@@ -15,7 +15,7 @@ export const Header = () => {
             Jobored
           </h1>
           <div className='header__items'>
-            <NavLink className={location.pathname === '/vacancy' ? 'search__item active' : 'search__item'} to='/'>Поиск Вакансий</NavLink>
+            <NavLink className={location.pathname.match('vacancy') ? 'search__item active' : 'search__item'} to='/'>Поиск Вакансий</NavLink>
             <NavLink className='favorite__item' to='/favorite'>Избранное</NavLink>
           </div>
         </div>

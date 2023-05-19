@@ -1,0 +1,83 @@
+.vacancy-page .container {
+  max-width: 773px;
+}
+
+.vacancy__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.vacancy-page .item__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #232134;
+  margin-bottom: 16px;
+}
+
+.vacancy-page .item__payment {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+.vacancy-page .item__schedule {
+  font-size: 20px;
+}
+
+.vacancy-page .item__conditions {
+  margin-bottom: 16px;
+}
+
+.vacancy-page .item__city {
+  line-height: 22px;
+}
+
+.vacancy-page .content__item {
+  height: max-content;
+}
+
+.vacancy-page .separator {
+  width: 6px;
+  height: 6px;
+  margin: 0 13px 0 17px
+}
+
+.vacancy__description {
+  background: #FFFFFF;
+  border: 1px solid #EAEBED;
+  border-radius: 12px;
+}
+
+.description__row {
+  padding: 23px 24px 20px 24px;
+}
+
+.description__row:nth-child(2) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.description__row:nth-child(3) {
+  padding-top: 20px;
+}
+
+.description__row span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.description__row ul {
+  padding-top: 16px;
+  list-style: initial;
+  margin-left: 24px;
+}
+
+.description__row li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}

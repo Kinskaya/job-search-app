@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import React, {useState} from "react";
 
 import locationIcon from "../../assets/images/location-icon.png";
@@ -23,13 +23,15 @@ export const Item = (item: IItem) => {
     setSelected(!isSelected)
   }
 
+  const router = useNavigate();
+
   return (
-    <div className="content__item">
+    <div className="content__item" onClick={() => router(`/vacancy/${item.id}`)}>
       <div className="item__row">
         <div className="item__info">
-          <Link className="item__title" to="/vacancy">
+          <div className="item__title" >
             {item.title}
-          </Link>
+          </div>
           <div className="item__conditions">
             <div className="item__payment">
             <span className="payment-from">

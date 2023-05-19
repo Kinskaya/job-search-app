@@ -18,7 +18,7 @@ root.render(
         <Route path='/' element={<Layout />}>
           <Route path='/' element={<MainPage />} />
           <Route path='/favorite' element={<FavoritePage />} />
-          <Route path='/vacancy' element={<VacancyPage />} />
+          <Route path='/vacancy/:id' element={<VacancyPage />} />
           <Route path='/empty' element={<EmptyStatePage />} />
         </Route>
       </Routes>
