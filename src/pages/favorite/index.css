@@ -1,0 +1,5 @@
+.favorite-page .container {
+  max-width: 773px;
+  display: flex;
+  flex-direction: column;
+}

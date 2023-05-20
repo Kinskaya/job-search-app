@@ -16,7 +16,7 @@ export const Header = () => {
           </h1>
           <div className='header__items'>
             <NavLink className={location.pathname.match('vacancy') ? 'search__item active' : 'search__item'} to='/'>Поиск Вакансий</NavLink>
-            <NavLink className='favorite__item' to='/favorite'>Избранное</NavLink>
+            <NavLink className={location.pathname.match('empty') ? 'favorite__item active' : 'favorite__item'} to='/favorite'>Избранное</NavLink>
           </div>
         </div>
       </div>

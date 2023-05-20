@@ -26,10 +26,10 @@ export const Item = (item: IItem) => {
   const router = useNavigate();
 
   return (
-    <div className="content__item" onClick={() => router(`/vacancy/${item.id}`)}>
+    <div className="content__item">
       <div className="item__row">
         <div className="item__info">
-          <div className="item__title" >
+          <div className="item__title" onClick={() => router(`/vacancy/${item.id}`)}>
             {item.title}
           </div>
           <div className="item__conditions">
@@ -54,7 +54,7 @@ export const Item = (item: IItem) => {
             {item.location}
           </div>
         </div>
-        <button className={isSelected || item.selected ? "select__btn active" : "select__btn"} type="button"
+        <button data-elem="vacancy-_vacancy_id_-shortlist-button" className={isSelected || item.selected ? "select__btn active" : "select__btn"} type="button"
           onClick={handleToggle}>
          {/* <img src={!item.selected || isSelected ? starIcon : starIcon2} alt="star-icon"/>*/}
         </button>

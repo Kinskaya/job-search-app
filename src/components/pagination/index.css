@@ -1,7 +1,7 @@
 ul[role=navigation] {
   display: flex;
   width: 192px;
-  justify-content: space-between;
+  gap: 8px;
   margin: 40px auto 0 auto;
 }
 
@@ -50,3 +50,6 @@ a[role=button] {
 }
 
 
+.favorite-page ul[role=navigation] {
+  margin-top: 104px;
+}

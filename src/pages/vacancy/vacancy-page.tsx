@@ -14,7 +14,7 @@ export const VacancyPage = () => {
         {data.map((el) => {
           if (el.id.toString() === params.id) {
             return (
-              <div className="vacancy__wrap">
+              <div className="vacancy__wrap" data-elem="vacancy-_vacancy_id_">
                 <Item
                   key={el.id}
                   id={el.id}

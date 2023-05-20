@@ -17,7 +17,7 @@ export const Filter = () => (
       </div>
       <div className="filter__content field">
         <label>Отрасль</label>
-        <select disabled>
+        <select data-elem="industry-select" disabled>
           <option defaultValue="Выберете отрасль">
             Выберете отрасль
           </option>
@@ -27,17 +27,17 @@ export const Filter = () => (
       <div className="filter__content">
         <label>Оклад</label>
         <div className="salary">
-          <input className="salary-from" type="text" placeholder="От"/>
+          <input data-elem="salary-from-input" className="salary-from" type="text" placeholder="От"/>
           <span className="chevron chevron_top" />
           <span className="chevron chevron_bottom" />
         </div>
         <div className="salary">
-          <input className="salary-to" type="text" placeholder="До"/>
+          <input data-elem="salary-to-input" className="salary-to" type="text" placeholder="До"/>
           <span className="chevron chevron_top" />
           <span className="chevron chevron_bottom" />
         </div>
       </div>
-      <button type="button" className="filter__btn btn">
+      <button data-elem="search-button" type="button" className="filter__btn btn">
         Применить
       </button>
     </div>

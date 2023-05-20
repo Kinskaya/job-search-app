@@ -6,8 +6,8 @@ export const SearchBar = () => (
   <div className="content__item search">
     <div className="search-bar">
       <img src={searchIcon} className="search-bar__icon" alt="search-icon" />
-      <input type="text" placeholder="Введите название вакансии"/>
-      <button type="button" className="search-bar__btn btn">
+      <input data-elem="search-input" type="text" placeholder="Введите название вакансии"/>
+      <button data-elem="search-button" type="button" className="search-bar__btn btn">
         Поиск
       </button>
     </div>

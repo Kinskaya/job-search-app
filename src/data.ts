@@ -18,7 +18,7 @@ export const data =
       currency: "rub",
       schedule: "Полный рабочий день",
       location: "Москва",
-      selected: true,
+      selected: false,
     },
     {
       id: 3,
@@ -58,7 +58,7 @@ export const data =
       currency: "rub",
       schedule: "Полный рабочий день",
       location: "Москва",
-      selected: true,
+      selected: false,
     },
     {
       id: 7,
@@ -98,7 +98,7 @@ export const data =
       currency: "rub",
       schedule: "Полный рабочий день",
       location: "Москва",
-      selected: true,
+      selected: false,
     },
     {
       id: 11,

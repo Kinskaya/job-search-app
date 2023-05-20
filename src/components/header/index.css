@@ -23,7 +23,8 @@
   color: #232134;
 }
 
-.header__items .active {
+.header__items .active,
+.favorite__item .active {
   font-weight: 500;
   color: var(--active-link);
 }
@@ -32,3 +33,5 @@
   font-weight: 500;
   color: var(--active-link);
 }
+
+
