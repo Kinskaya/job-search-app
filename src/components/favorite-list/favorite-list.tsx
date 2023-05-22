@@ -14,13 +14,13 @@ export const FavoriteList: React.FC<TFavoriteList> = ({ currentItems}) =>
             <Item
               key={item.id}
               id={item.id}
-              title={item.title}
-              paymentFrom={item.paymentFrom}
-              paymentTo={item.paymentTo}
+              profession={item.profession}
+              payment_from={item.payment_from}
+              payment_to={item.payment_to}
               currency={item.currency}
-              schedule={item.schedule}
-              location={item.location}
-              selected={item.selected}
+              type_of_work={item.type_of_work}
+              town={item.town}
+              favorite={item.favorite}
             />
           )
         )

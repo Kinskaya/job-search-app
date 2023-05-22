@@ -1,6 +1,7 @@
-import emptyPageImage from "../../assets/images/emptyPage-image.jpg"
 import React from "react";
 import {NavLink} from "react-router-dom";
+
+import emptyPageImage from "../../assets/images/emptyPage-image.jpg"
 
 import "./index.css";
 
@@ -13,10 +14,7 @@ export const EmptyStatePage = () => (
           Упс, здесь еще ничего нет!
         </div>
         <NavLink className="search-vacancy__btn btn" to='/'>Поиск Вакансий</NavLink>
-       {/* <button type="button" className="search-vacancy__btn btn" onClick={}>
-          Поиск Вакансий
-        </button>*/}
-      </div>
+        </div>
     </div>
   </section>
 )

@@ -1,25 +1,30 @@
 import React from "react";
 import { IItem, Item } from "../item/item";
 
+
 type TItemList = {
   currentItems: IItem[];
 };
 
-export const ItemList: React.FC<TItemList> = ({currentItems}) => (
-  <div className="content__row">
-    {currentItems &&
-      currentItems.map((item) => (
+export const ItemList: React.FC<TItemList> = ({currentItems}) => {
+
+  return (
+    <div className="content__row">
+      {currentItems &&
+      currentItems.map((item) => {
+        return (
         <Item
           key={item.id}
           id={item.id}
-          title={item.title}
-          paymentFrom={item.paymentFrom}
-          paymentTo={item.paymentTo}
+          profession={item.profession}
+          payment_from={item.payment_from}
+          payment_to={item.payment_to}
           currency={item.currency}
-          schedule={item.schedule}
-          location={item.location}
-          selected={item.selected}
+          type_of_work={item.type_of_work}
+          town={item.town}
+          favorite={item.favorite}
         />
-      ))}
-  </div>
-);
+      )})}
+    </div>
+  );
+}

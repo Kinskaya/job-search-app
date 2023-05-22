@@ -1,8 +1,8 @@
 ul[role=navigation] {
   display: flex;
-  width: 192px;
   gap: 8px;
-  margin: 40px auto 0 auto;
+  margin-top: 40px;
+  justify-content: center;
 }
 
 .previous a,

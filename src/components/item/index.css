@@ -27,10 +27,12 @@
 }
 
 .item__payment {
+  display: flex;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   color: #232134;
+  gap: 3px;
 }
 
 .item__city {
@@ -62,8 +64,4 @@
 
 .select__btn.active {
   background: transparent url("../../assets/images/star2-icon.svg") no-repeat;
-}
-
-.payment-currency {
-  margin-left: 2px;
 }
